@@ -5,25 +5,14 @@ It is developed as part of coursework at the University of Tehran and is structu
 
 ---
 
-## Project Structure
-.
-├── config/                # Configuration files (hyperparameters, logging)
-├── data/                  # Data loading and preprocessing
-│   ├── data_loader.py
-│   └── dataset/
-├── models/                # Model architectures and saved checkpoints
-│   ├── model.py
-│   └── saved_models/
-├── notebooks/             # Jupyter notebooks
-│   └── ImageCaptioning_final.ipynb
-├── scripts/               # Training and evaluation scripts
-│   ├── main.py
-│   ├── train.py
-│   └── evaluate.py
-├── util/                  # Utility functions (metrics, visualization, helpers)
-├── requirements.txt       # Dependencies
-├── README.md              # Documentation
-└── report.pdf             # Full assignment report
+## Repository Contents
+- `config/`: YAML files for training configurations and logging  
+- `data/`: Data loader  
+- `models/`: Model architecture definitions (EncoderCNN, DecoderRNN, Attention)  
+- `notebooks/`: Jupyter notebook for exploration and experiments  
+- `scripts/`: Training, evaluation, and entry-point scripts  
+- `utils/`: Metrics computation and visualization tools  
+- `report.pdf`: Original report (in Persian)  
 
 ---
 
@@ -67,21 +56,23 @@ It is developed as part of coursework at the University of Tehran and is structu
 
 ---
 
-## Installation
-
+## Setup
+Clone the repository:
 ```bash
 git clone https://github.com/omidnaeej/Image2Caption-EncoderDecoder-Attention.git
 cd Image2Caption-EncoderDecoder-Attention
+```
+
+## Install dependencies:
+
+```bash
 pip install -r requirements.txt
 ```
 
 ---
 
 ## Usage
-
-### 1. **Prepare Data**
-
-Change configurations in `config/config.yaml` if you want.
+Change configurations in `config/config.yaml` if you want. Then run the main script:
 
 ```bash
 python -m scripts.main
