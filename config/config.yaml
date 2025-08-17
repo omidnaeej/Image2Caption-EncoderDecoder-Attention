@@ -1,0 +1,29 @@
+data:
+  kaggle_json_path: data/kaggle.json
+  kaggle_dataset: adityajn105/flickr8k
+  download_path: data/dataset
+  captions_file: data/dataset/captions.txt
+  images_dir:    data/dataset/Images
+  freq_threshold: 1
+  max_length: 20
+
+loader:
+  train: { batch_size: 60, shuffle: true, num_workers: 4 }
+  val:   { batch_size: 60, shuffle: false, num_workers: 4 }
+  test:  { batch_size: 60, shuffle: false, num_workers: 4 }
+
+train:
+  encoder:
+    fine_tune: false
+  embed_dim: 512
+  decoder_dim: 256
+  use_attention: false
+  dropout: 0.15
+  learning_rate: 5e-5
+  max_epochs: 10
+  patience: 3
+  checkpoint_dir: models/saved_models
+
+evaluate:
+  decode_strategy: greedy
+  beam_size: 2
