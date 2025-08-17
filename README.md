@@ -19,7 +19,7 @@ It is developed as part of coursework at the University of Tehran and is structu
 ## Implemented Components
 
 ### 1. **Data Preparation**
-- Used **Flickr8k dataset** (or similar) with Karpathy splits (train/val/test).
+- Used **Flickr8k dataset**.
 - Preprocessing includes:
   - Tokenization of captions (without pre-built tokenizers).
   - Adding `<START>` and `<END>` tokens to sequences.
@@ -85,19 +85,3 @@ python -m scripts.main
 * Baseline: Encoder–Decoder (ResNet + LSTM/GRU).
 * Improvements: BLEU scores improved with beam search, teacher forcing, and attention.
 * Visualizations: Attention heatmaps show regions of images aligned with words in captions.
-
----
-
-## References
-
-* Xu et al., *Show, Attend and Tell* (2015)
-* Bahdanau et al., *Neural Machine Translation by Jointly Learning to Align and Translate* (2014)
-* Pennington et al., *GloVe* (2014)
-* Papineni et al., *BLEU: a method for automatic evaluation of machine translation* (2002)
-* Karpathy splits: [Deep Visual-Semantic Alignments](http://cs.stanford.edu/people/karpathy/deepimagesent/caption_datasets.zip)
-
----
-
-## Acknowledgements
-
-Developed as part of the **University of Tehran – Deep Learning (Image & Speech Applications)** course.
