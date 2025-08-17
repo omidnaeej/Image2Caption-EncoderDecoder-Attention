@@ -16,7 +16,7 @@ It is developed as part of coursework at the University of Tehran and is structu
 
 ---
 
-## Implemented Components
+## Project Overview
 
 ### 1. **Data Preparation**
 - Used **Flickr8k dataset**.
